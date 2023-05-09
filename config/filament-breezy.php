@@ -19,7 +19,7 @@ return [
     /*
     | Customize the icon profile page icon in the navbar. Does not apply to the user menu.
     */
-    "profile_page_icon" => 'heroicon-o-document-text',
+    "profile_page_icon" => 'heroicon-o-user-circle',
     /*
     | Set an array that's compatible with the Filament Forms rules() method. Rules for required and confirmed are already set. These rules will apply to the My Profile, registration, and password reset forms. To use an instance of the \Illuminate\Validation\Rules\Password::class, see documentation.
     */
@@ -49,7 +49,7 @@ return [
     |--------------------------------------------------------------------------
     | The column to use for login/username authentication. NOTE: this may change to just 'login_field' in a later release.
     */
-    "fallback_login_field" => "email",
+    "fallback_login_field" => "username",
     /*
     |--------------------------------------------------------------------------
     | Set a route name prefix for all of Breezy's auth routes. Ex. set filament. to prefix all route names, filament.register. WARNING: if you use a custom route prefix, you'll need to override the default auth routes used throughout your application. This is outside of Breezy's scope and will be up to the dev to maintain. Use at your own risk. See example: https://laravel.com/docs/9.x/passwords#password-customization
