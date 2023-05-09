@@ -18,6 +18,8 @@ class NasResource extends Resource
 {
     protected static ?string $model = Nas::class;
 
+    protected static ?string $navigationGroup = 'Radius';
+
     protected static ?string $navigationIcon = 'heroicon-o-collection';
 
     public static function form(Form $form): Form

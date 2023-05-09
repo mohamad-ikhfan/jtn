@@ -2,9 +2,9 @@
 
 namespace App\Filament\Resources;
 
-use App\Filament\Resources\RadpostauthResource\Pages;
-use App\Filament\Resources\RadpostauthResource\RelationManagers;
-use App\Models\Radpostauth;
+use App\Filament\Resources\RadusergroupResource\Pages;
+use App\Filament\Resources\RadusergroupResource\RelationManagers;
+use App\Models\Radusergroup;
 use Filament\Forms;
 use Filament\Resources\Form;
 use Filament\Resources\Resource;
@@ -13,11 +13,9 @@ use Filament\Tables;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
-class RadpostauthResource extends Resource
+class RadusergroupResource extends Resource
 {
-    protected static ?string $model = Radpostauth::class;
-
-    protected static ?string $navigationGroup = 'Radius';
+    protected static ?string $model = Radusergroup::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-collection';
 
@@ -28,13 +26,10 @@ class RadpostauthResource extends Resource
                 Forms\Components\TextInput::make('username')
                     ->required()
                     ->maxLength(64),
-                Forms\Components\TextInput::make('pass')
+                Forms\Components\TextInput::make('groupname')
                     ->required()
                     ->maxLength(64),
-                Forms\Components\TextInput::make('reply')
-                    ->required()
-                    ->maxLength(32),
-                Forms\Components\DateTimePicker::make('authdate')
+                Forms\Components\TextInput::make('priority')
                     ->required(),
             ]);
     }
@@ -44,10 +39,8 @@ class RadpostauthResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('username'),
-                Tables\Columns\TextColumn::make('pass'),
-                Tables\Columns\TextColumn::make('reply'),
-                Tables\Columns\TextColumn::make('authdate')
-                    ->dateTime(),
+                Tables\Columns\TextColumn::make('groupname'),
+                Tables\Columns\TextColumn::make('priority'),
             ])
             ->filters([
                 //
@@ -60,11 +53,11 @@ class RadpostauthResource extends Resource
                 Tables\Actions\DeleteBulkAction::make(),
             ]);
     }
-
+    
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ManageRadpostauths::route('/'),
+            'index' => Pages\ManageRadusergroups::route('/'),
         ];
-    }
+    }    
 }

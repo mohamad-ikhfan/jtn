@@ -17,6 +17,8 @@ class RadcheckResource extends Resource
 {
     protected static ?string $model = Radcheck::class;
 
+    protected static ?string $navigationGroup = 'Radius';
+
     protected static ?string $navigationIcon = 'heroicon-o-collection';
 
     public static function form(Form $form): Form
