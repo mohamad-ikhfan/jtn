@@ -66,8 +66,7 @@ class RadcheckResource extends Resource
                     ->searchable(),
 
                 Tables\Columns\TextColumn::make('op')
-                    ->sortable()
-                    ->searchable(),
+                    ->sortable(),
 
                 Tables\Columns\TextColumn::make('value')
                     ->sortable()

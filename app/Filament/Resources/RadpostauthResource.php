@@ -21,39 +21,51 @@ class RadpostauthResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-collection';
 
-    public static function form(Form $form): Form
-    {
-        return $form
-            ->schema([
-                Forms\Components\TextInput::make('username')
-                    ->required()
-                    ->maxLength(64),
-                Forms\Components\TextInput::make('pass')
-                    ->required()
-                    ->maxLength(64),
-                Forms\Components\TextInput::make('reply')
-                    ->required()
-                    ->maxLength(32),
-                Forms\Components\DateTimePicker::make('authdate')
-                    ->required(),
-            ]);
-    }
+    // public static function form(Form $form): Form
+    // {
+    //     return $form
+    //         ->schema([
+    //             // Forms\Components\TextInput::make('username')
+    //             //     ->required()
+    //             //     ->maxLength(64),
+    //             // Forms\Components\TextInput::make('pass')
+    //             //     ->required()
+    //             //     ->maxLength(64),
+    //             // Forms\Components\TextInput::make('reply')
+    //             //     ->required()
+    //             //     ->maxLength(32),
+    //             // Forms\Components\DateTimePicker::make('authdate')
+    //             //     ->required(),
+    //         ]);
+    // }
 
     public static function table(Table $table): Table
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('username'),
-                Tables\Columns\TextColumn::make('pass'),
-                Tables\Columns\TextColumn::make('reply'),
+                Tables\Columns\TextColumn::make('username')
+                    ->sortable()
+                    ->searchable(),
+
+                Tables\Columns\TextColumn::make('pass')
+                    ->sortable()
+                    ->searchable(),
+
+                Tables\Columns\TextColumn::make('reply')
+                    ->sortable()
+                    ->searchable(),
+
                 Tables\Columns\TextColumn::make('authdate')
-                    ->dateTime(),
+                    ->dateTime()
+                    ->sortable()
+                    ->searchable(),
+
             ])
             ->filters([
                 //
             ])
             ->actions([
-                Tables\Actions\EditAction::make(),
+                // Tables\Actions\EditAction::make(),
                 Tables\Actions\DeleteAction::make(),
             ])
             ->bulkActions([

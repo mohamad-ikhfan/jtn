@@ -61,10 +61,21 @@ class RadgroupreplyResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('groupname'),
-                Tables\Columns\TextColumn::make('attribute'),
-                Tables\Columns\TextColumn::make('op'),
-                Tables\Columns\TextColumn::make('value'),
+                Tables\Columns\TextColumn::make('groupname')
+                    ->sortable()
+                    ->searchable(),
+
+                Tables\Columns\TextColumn::make('attribute')
+                    ->sortable()
+                    ->searchable(),
+
+                Tables\Columns\TextColumn::make('op')
+                    ->sortable(),
+
+                Tables\Columns\TextColumn::make('value')
+                    ->sortable()
+                    ->searchable(),
+
             ])
             ->filters([
                 //
