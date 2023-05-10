@@ -28,6 +28,8 @@ return [
             'label' => 'Remember me',
         ],
 
+        "login" => "Username",
+
     ],
 
     'messages' => [

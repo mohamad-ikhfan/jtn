@@ -28,6 +28,8 @@ return [
             'label' => 'Ingat saya',
         ],
 
+        "login" => "Username",
+
     ],
 
     'messages' => [

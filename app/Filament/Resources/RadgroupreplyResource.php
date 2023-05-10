@@ -27,6 +27,7 @@ class RadgroupreplyResource extends Resource
             ->schema([
                 Forms\Components\TextInput::make('groupname')
                     ->required()
+                    ->unique(ignoreRecord: true)
                     ->maxLength(64),
 
                 Forms\Components\TextInput::make('attribute')

@@ -25,6 +25,11 @@ class RadcheckResource extends Resource
     {
         return $form
             ->schema([
+                Forms\Components\TextInput::make('username')
+                    ->required()
+                    ->unique(ignoreRecord: true)
+                    ->maxLength(255),
+
                 Forms\Components\TextInput::make('attribute')
                     ->required()
                     ->maxLength(255),

@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Radgroupreply;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,4 +16,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('test', function () {
+    dd(intval(str_replace("K", "000", explode(" ", Radgroupreply::find(1)->groupname)[3] ?? 0)));
 });
