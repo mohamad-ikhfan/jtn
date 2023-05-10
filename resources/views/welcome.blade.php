@@ -845,12 +845,6 @@
                     <a href="/billgates"
                         class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500 border-4 border-transparent hover:border-red-500">
                         <div>
-                            <div
-                                class="h-16 w-16 bg-red-50 dark:bg-red-800/20 flex items-center justify-center rounded-full">
-                                <i class="fa-solid fa-b fa-lg text-red-500"></i>
-                                <i class="fa-solid fa-g fa-lg text-red-500"></i>
-                            </div>
-
                             <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">{{ __('Billgates') }}
                             </h2>
 
@@ -869,11 +863,6 @@
                     {{-- <a href="/register"
                         class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500 hover:outline-4 hover:outline-red-500 border-4 border-transparent hover:border-red-500">
                         <div>
-                            <div
-                                class="h-16 w-16 bg-red-50 dark:bg-red-800/20 flex items-center justify-center rounded-full">
-                                <i class="fa-regular fa-address-card fa-lg text-red-500"></i>
-                            </div>
-
                             <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">
                                 {{ __('Registration') }}
                             </h2>
@@ -893,11 +882,6 @@
                     <a href="{{ url('http://49.0.2.107/') }}" target="blank"
                         class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500 hover:outline-4 hover:outline-red-500 border-4 border-transparent hover:border-red-500">
                         <div>
-                            <div
-                                class="h-16 w-16 bg-red-50 dark:bg-red-800/20 flex items-center justify-center rounded-full">
-                                <i class="fa-regular fa-m fa-lg text-red-500"></i>
-                            </div>
-
                             <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">
                                 {{ __('Mikhmon Online') }}
                             </h2>
@@ -917,11 +901,6 @@
                     <a href="http://jtn.as.net.id/phpmyadmin" target="blank"
                         class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500 hover:outline-4 hover:outline-red-500 border-4 border-transparent hover:border-red-500">
                         <div>
-                            <div
-                                class="h-16 w-16 bg-red-50 dark:bg-red-800/20 flex items-center justify-center rounded-full">
-                                <i class="fa-solid fa-database fa-lg text-red-500"></i>
-                            </div>
-
                             <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">{{ __('Databases') }}
                             </h2>
 
@@ -940,11 +919,6 @@
                     <a href="https://nonamenetwork.blogspot.com" target="blank"
                         class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500 hover:outline-4 hover:outline-red-500 border-4 border-transparent hover:border-red-500">
                         <div>
-                            <div
-                                class="h-16 w-16 bg-red-50 dark:bg-red-800/20 flex items-center justify-center rounded-full">
-                                <i class="fa-solid fa-blog fa-lg text-red-500"></i>
-                            </div>
-
                             <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">{{ __('Blog') }}
                             </h2>
 
@@ -963,11 +937,6 @@
                     <a href="http://jtn.as.net.id:3000" target="blank"
                         class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500 hover:outline-4 hover:outline-red-500 border-4 border-transparent hover:border-red-500">
                         <div>
-                            <div
-                                class="h-16 w-16 bg-red-50 dark:bg-red-800/20 flex items-center justify-center rounded-full">
-                                <i class="fa-solid fa-ethernet fa-xl text-red-500"></i>
-                            </div>
-
                             <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">{{ __('Modem') }}
                             </h2>
 
@@ -976,8 +945,8 @@
                             </p>
                         </div>
 
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke-width="1.5" class="self-center shrink-0 stroke-red-500 w-6 h-6 mx-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            class="self-center shrink-0 stroke-red-500 w-6 h-6 mx-6">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
                         </svg>
@@ -986,11 +955,6 @@
                     <a href="http://49.0.1.1:8788/graphs/" target="blank"
                         class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500 hover:outline-4 hover:outline-red-500 border-4 border-transparent hover:border-red-500">
                         <div>
-                            <div
-                                class="h-16 w-16 bg-red-50 dark:bg-red-800/20 flex items-center justify-center rounded-full">
-                                <i class="fa-brands fa-stumbleupon fa-lg text-red-500"></i>
-                            </div>
-
                             <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">{{ __('MRTG') }}
                             </h2>
 
