@@ -11,8 +11,6 @@ class Radusergroup extends Model
 
     protected $connection = 'mysql2';
 
-    protected $primaryKey = null;
-
     public $incrementing = false;
 
     protected $table = 'radusergroup';
